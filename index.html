@@ -1,0 +1,76 @@
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; }
+    
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
+    
+    @keyframes floating {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+    
+    .pulse-animation { animation: pulse 2s infinite; }
+    .floating-animation { animation: floating 3s ease-in-out infinite; }
+    
+    @media (max-width: 768px) {
+        .responsive-text-xl { font-size: 1.5rem !important; }
+        .responsive-text-2xl { font-size: 2rem !important; }
+        .responsive-text-3xl { font-size: 2.5rem !important; }
+        .responsive-grid { grid-template-columns: 1fr !important; }
+    }
+</style>
+<!-- Header -->
+<header style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 16px 0; position: sticky; top: 0; z-index: 50; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+        <h1 style="font-size: 1.5rem; font-weight: bold; margin: 0;">🍳 Air Fryer Receitas</h1>
+        <button onclick="window.open('https://pay.cakto.com.br/8r828eh_323513', '_blank')" style="background: #fbbf24; color: #111827; padding: 8px 24px; border: none; border-radius: 9999px; font-weight: 600; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f59e0b'" onmouseout="this.style.background='#fbbf24'">
+            Comprar Agora
+        </button>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 16px; text-align: center;">
+        <div class="floating-animation" style="margin-bottom: 48px;">
+            <div style="width: 256px; height: 320px; margin: 0 auto; background: white; border-radius: 16px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); padding: 24px; transform: rotate(3deg);">
+                <div style="background: linear-gradient(to bottom right, #fb923c, #ef4444); height: 100%; border-radius: 12px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white;">
+                    <div style="font-size: 4rem; margin-bottom: 16px;">🍳</div>
+                    <h3 style="font-size: 1.25rem; font-weight: bold; margin: 0;">150 RECEITAS</h3>
+                    <p style="font-size: 0.875rem; margin: 0;">Air Fryer</p>
+                </div>
+            </div>
+        </div>
+        
+        <h1 class="responsive-text-3xl" style="font-size: 3rem; font-weight: bold; margin-bottom: 24px; line-height: 1.1;">
+            150 Receitas Rápidas<br>
+            <span style="color: #fde047;">para Air Fryer</span>
+        </h1>
+        
+        <p class="responsive-text-xl" style="font-size: 1.25rem; margin-bottom: 32px; max-width: 672px; margin-left: auto; margin-right: auto;">
+            Seu café da manhã nunca mais será o mesmo! Receitas deliciosas, rápidas e saudáveis para começar o dia com energia.
+        </p>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-bottom: 32px;">
+            <div style="display: flex; align-items: center; background: rgba(255, 255, 255, 0.2); border-radius: 9999px; padding: 12px 24px;">
+                <span style="font-size: 1.5rem; margin-right: 8px;">⚡</span>
+                <span style="font-weight: 600;">Receitas em 15 minutos</span>
+            </div>
+            <div style="display: flex; align-items: center; background: rgba(255, 255, 255, 0.2); border-radius: 9999px; padding: 12px 24px;">
+                <span style="font-size: 1.5rem; margin-right: 8px;">💚</span>
+                <span style="font-weight: 600;">100% Saudáveis</span>
+            </div>
+            <div style="display: flex; align-items: center; background: rgba(255, 255, 255, 0.2); border-radius: 9999px; padding: 12px 24px;">
+                <span style="font-size: 1.5rem; margin-right: 8px;">📱</span>
+                <span style="font-weight: 600;">Acesso Imediato</span>
+            </div>
+        </div>
+        
+        <button onclick="window.open('https://pay.cakto.com.br/8r828eh_323513', '_blank')" class="pulse-animation" style="background: #fbbf24; color: #111827; font-size: 1.25rem; font-weight: bold; padding: 16px 48px; border: none; border-radius: 9999px; cursor: pointer; transition: all 0.3s; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);" onmouseover="this.style.background='#f59e0b'" onmouseout="this.style.background='#fbbf24'">
+            QUERO MINHAS RECEITAS AGORA!
+        </button>
+    </div>
+</section>
