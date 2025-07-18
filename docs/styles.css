@@ -24,7 +24,7 @@ body {
 /* Header */
 .header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 15px 0;
+    padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -38,20 +38,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
 }
 
 .header h1 {
     color: white;
     font-size: 1.8rem;
     font-weight: 800;
+    flex: 1;
 }
 
 .btn-primary {
     background: #fbbf24;
     color: #111827;
-    padding: 12px 24px;
+    padding: 15px 30px;
     border: none;
     border-radius: 50px;
     font-weight: 700;
@@ -60,6 +60,7 @@ body {
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .btn-primary:hover {
@@ -71,7 +72,7 @@ body {
 /* Hero Section */
 .hero-section {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 80px 0;
+    padding: 60px 0;
     color: white;
     position: relative;
     overflow: hidden;
@@ -106,7 +107,7 @@ body {
     padding: 30px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
     transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
-    max-width: 300px;
+    max-width: 280px;
     width: 100%;
 }
 
@@ -118,17 +119,19 @@ body {
 .ebook-icon {
     font-size: 3rem;
     margin-bottom: 15px;
+    line-height: 1;
 }
 
 .ebook-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 900;
     color: #667eea;
     margin-bottom: 5px;
+    line-height: 1.2;
 }
 
 .ebook-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #764ba2;
 }
@@ -143,7 +146,7 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 900;
     margin-bottom: 20px;
     line-height: 1.1;
@@ -155,19 +158,20 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 40px;
     opacity: 0.9;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.5;
 }
 
 /* Badges */
 .badges-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 40px;
     flex-wrap: wrap;
 }
@@ -176,25 +180,26 @@ body {
     background: rgba(255,255,255,0.15);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.2);
-    padding: 15px 20px;
+    padding: 12px 18px;
     border-radius: 50px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     font-weight: 600;
+    font-size: 0.9rem;
 }
 
 .badge-icon {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .btn-hero {
     background: #10b981;
     color: white;
-    padding: 20px 40px;
+    padding: 18px 35px;
     border: none;
     border-radius: 50px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 800;
     cursor: pointer;
     text-transform: uppercase;
@@ -219,27 +224,28 @@ body {
 
 /* Benefits Section */
 .benefits-section {
-    padding: 80px 0;
+    padding: 60px 0;
     background: #f8fafc;
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     color: #1f2937;
+    line-height: 1.2;
 }
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .benefit-card {
     background: white;
-    padding: 40px 30px;
+    padding: 35px 25px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -264,12 +270,12 @@ body {
 }
 
 .benefit-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .benefit-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 15px;
     color: #1f2937;
@@ -278,36 +284,38 @@ body {
 .benefit-text {
     color: #6b7280;
     line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 /* Offer Section */
 .offer-section {
-    padding: 80px 0;
+    padding: 60px 0;
     background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
     color: white;
 }
 
 .offer-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 900;
     margin-bottom: 10px;
     color: #fbbf24;
+    line-height: 1.2;
 }
 
 .offer-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 40px;
     opacity: 0.8;
 }
 
 .offer-container {
-    max-width: 600px;
+    max-width: 550px;
     margin: 0 auto;
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 30px;
-    padding: 40px;
+    border-radius: 25px;
+    padding: 35px;
 }
 
 .price-section {
@@ -316,7 +324,7 @@ body {
 }
 
 .old-price {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #ef4444;
     margin-bottom: 10px;
 }
@@ -326,15 +334,17 @@ body {
 }
 
 .current-price {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
     color: #fbbf24;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    line-height: 1;
 }
 
 .price-description {
     opacity: 0.8;
+    font-size: 0.95rem;
 }
 
 .benefits-list {
@@ -344,25 +354,26 @@ body {
 .benefit-item {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
+    gap: 12px;
+    margin-bottom: 12px;
     font-weight: 500;
+    font-size: 0.95rem;
 }
 
 .benefit-check {
     color: #10b981;
     font-weight: 900;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .btn-cta {
     width: 100%;
     background: #10b981;
     color: white;
-    padding: 20px;
+    padding: 18px;
     border: none;
     border-radius: 15px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 800;
     cursor: pointer;
     margin-bottom: 20px;
@@ -377,9 +388,9 @@ body {
 .guarantee-badges {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     opacity: 0.8;
 }
 
@@ -390,7 +401,7 @@ body {
 }
 
 .timer-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 20px;
     color: #fbbf24;
@@ -399,68 +410,70 @@ body {
 .timer-container {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
 .timer-box {
     background: #ef4444;
     color: white;
-    padding: 20px;
-    border-radius: 15px;
-    min-width: 80px;
+    padding: 15px;
+    border-radius: 12px;
+    min-width: 70px;
     text-align: center;
 }
 
 .timer-box div:first-child {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900;
     line-height: 1;
 }
 
 .timer-label {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 600;
     margin-top: 5px;
 }
 
 /* Guarantee Section */
 .guarantee-section {
-    padding: 80px 0;
+    padding: 60px 0;
     background: #f0f9ff;
 }
 
 .guarantee-icon {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
 }
 
 .guarantee-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
     margin-bottom: 20px;
     color: #1f2937;
+    line-height: 1.2;
 }
 
 .guarantee-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #6b7280;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto 40px;
+    line-height: 1.6;
 }
 
 .guarantee-box {
     background: white;
-    padding: 30px;
+    padding: 25px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    max-width: 500px;
+    max-width: 450px;
     margin: 0 auto;
     border-left: 5px solid #10b981;
 }
 
 .guarantee-box-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #10b981;
     margin-bottom: 10px;
@@ -468,37 +481,40 @@ body {
 
 .guarantee-box-text {
     color: #6b7280;
+    font-size: 0.95rem;
 }
 
 /* Final CTA Section */
 .final-cta-section {
-    padding: 80px 0;
+    padding: 60px 0;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
 }
 
 .section-title-white {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
     margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 .final-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 40px;
     opacity: 0.9;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.5;
 }
 
 .btn-final {
     background: #fbbf24;
     color: #111827;
-    padding: 20px 40px;
+    padding: 18px 35px;
     border: none;
     border-radius: 50px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 800;
     cursor: pointer;
     margin-bottom: 20px;
@@ -512,155 +528,278 @@ body {
 
 .final-note {
     opacity: 0.8;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
-/* Responsive Design */
+/* MOBILE RESPONSIVE - Menos de 768px */
 @media (max-width: 768px) {
-    .header h1 {
-        font-size: 1.3rem;
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Header Mobile */
+    .header {
+        padding: 15px 0;
     }
     
     .header-container {
-        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
         text-align: center;
     }
     
+    .header h1 {
+        font-size: 1.4rem;
+    }
+    
+    .btn-primary {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+    
+    /* Hero Mobile */
     .hero-section {
-        padding: 60px 0;
-    }
-    
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.1rem;
+        padding: 40px 0;
     }
     
     .ebook-container {
-        max-width: 250px;
+        max-width: 220px;
         padding: 20px;
     }
     
     .ebook-icon {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     
     .ebook-title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+    
+    .ebook-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
     }
     
     .badges-container {
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
     
     .badge {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
         justify-content: center;
+        padding: 10px 15px;
+        font-size: 0.85rem;
     }
     
     .btn-hero {
-        padding: 18px 30px;
-        font-size: 1.1rem;
+        padding: 15px 25px;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    /* Benefits Mobile */
+    .benefits-section {
+        padding: 40px 0;
     }
     
     .section-title {
-        font-size: 2rem;
+        font-size: 1.7rem;
+        margin-bottom: 35px;
     }
     
     .benefits-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .benefit-card {
-        padding: 30px 20px;
+        padding: 25px 20px;
     }
     
-    .offer-title {
+    .benefit-icon {
         font-size: 2.2rem;
     }
     
-    .current-price {
-        font-size: 3rem;
+    .benefit-title {
+        font-size: 1.2rem;
+    }
+    
+    /* Offer Mobile */
+    .offer-section {
+        padding: 40px 0;
+    }
+    
+    .offer-title {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+    
+    .offer-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
     }
     
     .offer-container {
-        padding: 30px 20px;
+        padding: 25px 20px;
     }
     
-    .guarantee-title {
-        font-size: 2rem;
+    .current-price {
+        font-size: 2.8rem;
     }
     
-    .guarantee-text {
+    .old-price {
+        font-size: 1rem;
+    }
+    
+    .benefit-item {
+        font-size: 0.9rem;
+    }
+    
+    .btn-cta {
         font-size: 1.1rem;
+        padding: 16px;
     }
     
-    .section-title-white {
-        font-size: 2rem;
+    .guarantee-badges {
+        flex-direction: column;
+        gap: 8px;
+        font-size: 0.8rem;
     }
     
-    .final-text {
+    /* Timer Mobile */
+    .timer-text {
         font-size: 1.1rem;
     }
     
     .timer-container {
-        gap: 10px;
+        gap: 8px;
     }
     
     .timer-box {
-        min-width: 70px;
-        padding: 15px;
+        min-width: 60px;
+        padding: 12px 8px;
     }
     
     .timer-box div:first-child {
         font-size: 1.5rem;
     }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 0 15px;
+    
+    .timer-label {
+        font-size: 0.7rem;
     }
     
-    .hero-title {
-        font-size: 2rem;
+    /* Guarantee Mobile */
+    .guarantee-section {
+        padding: 40px 0;
     }
     
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-    
-    .offer-title {
-        font-size: 1.8rem;
-    }
-    
-    .current-price {
-        font-size: 2.5rem;
-    }
-    
-    .section-title {
-        font-size: 1.8rem;
+    .guarantee-icon {
+        font-size: 3rem;
     }
     
     .guarantee-title {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
     
-    .section-title-white {
-        font-size: 1.8rem;
-    }
-    
-    .btn-hero, .btn-final {
-        padding: 15px 25px;
+    .guarantee-text {
         font-size: 1rem;
     }
     
-    .guarantee-badges {
-        flex-direction: column;
-        gap: 10px;
+    .guarantee-box {
+        padding: 20px;
+    }
+    
+    .guarantee-box-title {
+        font-size: 1.2rem;
+    }
+    
+    /* Final CTA Mobile */
+    .final-cta-section {
+        padding: 40px 0;
+    }
+    
+    .section-title-white {
+        font-size: 1.7rem;
+    }
+    
+    .final-text {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .btn-final {
+        padding: 15px 25px;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* MOBILE PEQUENO - Menos de 480px */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+    
+    .header h1 {
+        font-size: 1.2rem;
+    }
+    
+    .hero-title {
+        font-size: 1.7rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .offer-title {
+        font-size: 1.6rem;
+    }
+    
+    .current-price {
+        font-size: 2.4rem;
+    }
+    
+    .guarantee-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-title-white {
+        font-size: 1.5rem;
+    }
+    
+    .ebook-container {
+        max-width: 200px;
+        padding: 15px;
+    }
+    
+    .ebook-icon {
+        font-size: 2rem;
+    }
+    
+    .ebook-title {
+        font-size: 1rem;
+    }
+    
+    .ebook-subtitle {
+        font-size: 0.9rem;
     }
 }
