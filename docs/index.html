@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <title>150 Receitas rápidas para Air Fryer</title>
         <link rel="stylesheet" href="styles.css">
-        <!-- Meta Pixel Code -->
         <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -21,13 +20,10 @@
         <noscript><img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=774162185167523&ev=PageView&noscript=1"
         /></noscript>
-        <!-- End Meta Pixel Code -->
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <!-- <section class="hero-section">
         <div class="container text-center">
-            <!-- Mockup do E-book -->
             <div class="ebook-mockup floating-animation">
                 <div class="ebook-container">
                     <div class="ebook-content">
@@ -47,7 +43,6 @@
                 Seu café da manhã nunca mais será o mesmo! Receitas deliciosas, rápidas e saudáveis para começar o dia com energia.
             </p>
             
-            <!-- Badges -->
             <div class="badges-container">
                 <div class="badge">
                     <span class="badge-icon">⚡</span>
@@ -69,7 +64,6 @@
         </div>
     </section>
     
-    <!-- Benefícios -->
     <section class="benefits-section">
         <div class="container">
             <h2 class="section-title">
@@ -98,7 +92,6 @@
         </div>
     </section>
     
-    <!-- Oferta Principal -->
     <section class="offer-section">
         <div class="container text-center">
             <h2 class="offer-title">☕🍞🍳 OFERTA ESPECIAL ☕🍞🍳</h2>
@@ -145,7 +138,6 @@
                 </div>
             </div>
     
-            <!-- Timer -->
             <div class="timer-section">
                 <p class="timer-text">⏰ Oferta expira em:</p>
                 <div class="timer-container">
@@ -166,7 +158,6 @@
         </div>
     </section>
     
-    <!-- Garantia -->
     <section class="guarantee-section">
         <div class="container text-center">
             <div class="guarantee-icon">🛡️</div>
@@ -182,7 +173,6 @@
         </div>
     </section>
     
-    <!-- CTA Final -->
     <section class="final-cta-section">
         <div class="container text-center">
             <h2 class="section-title-white">Não perca esta oportunidade!</h2>
@@ -197,6 +187,214 @@
         </div>
     </section>
     
+    <script>
+        function updateTimer() {
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+            
+            let hours = parseInt(hoursEl.textContent);
+            let minutes = parseInt(minutesEl.textContent);
+            let seconds = parseInt(secondsEl.textContent);
+            
+            seconds--;
+            
+            if (seconds < 0) {
+                seconds = 59;
+                minutes--;
+                
+                if (minutes < 0) {
+                    minutes = 59;
+                    hours--;
+                    
+                    if (hours < 0) {
+                        hours = 23;
+                    }
+                }
+            }
+            
+            hoursEl.textContent = hours.toString().padStart(2, '0');
+            minutesEl.textContent = minutes.toString().padStart(2, '0');
+            secondsEl.textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateTimer, 1000);
+    </script> -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <!-- Mockup do E-book -->
+            <div class="ebook-mockup floating-animation">
+                <div class="ebook-container">
+                    <div class="ebook-content">
+                        <div class="ebook-icon">☕🍞🍳</div>
+                        <h3 class="ebook-title">150 RECEITAS</h3>
+                        <p class="ebook-subtitle">Air Fryer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h1 class="hero-title">
+                150 Receitas Rápidas<br>
+                <span class="hero-highlight">para Air Fryer</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                Seu café da manhã nunca mais será o mesmo! Receitas deliciosas, rápidas e saudáveis para começar o dia com energia.
+            </p>
+            
+            <!-- Badges -->
+            <div class="badges-container">
+                <div class="badge">
+                    <span class="badge-icon">⚡</span>
+                    <span class="badge-text">Receitas em 15 minutos</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">💚</span>
+                    <span class="badge-text">100% Saudáveis</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">📱</span>
+                    <span class="badge-text">Acesso Imediato</span>
+                </div>
+            </div>
+            
+            <button class="btn-hero pulse-animation" onclick="window.open('https://pay.cakto.com.br/8r828eh_323513', '_blank')">
+                QUERO MINHAS RECEITAS AGORA!
+            </button>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">
+                Por que você vai <span style="color: #9333ea;">AMAR</span> essas receitas?
+            </h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card benefit-card-1">
+                    <div class="benefit-icon">⏰</div>
+                    <h3 class="benefit-title">Economia de Tempo</h3>
+                    <p class="benefit-text">Receitas que ficam prontas em até 15 minutos. Perfeito para quem tem uma rotina corrida mas não quer abrir mão de um café da manhã delicioso.</p>
+                </div>
+                
+                <div class="benefit-card benefit-card-2">
+                    <div class="benefit-icon">🥗</div>
+                    <h3 class="benefit-title">Alimentação Saudável</h3>
+                    <p class="benefit-text">Todas as receitas são balanceadas e nutritivas. Comece o dia com energia e disposição, sem culpa e com muito sabor.</p>
+                </div>
+                
+                <div class="benefit-card benefit-card-3">
+                    <div class="benefit-icon">💰</div>
+                    <h3 class="benefit-title">Economia Real</h3>
+                    <p class="benefit-text">Pare de gastar fortunas em cafés e padarias. Com essas receitas, você economiza centenas de reais por mês.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta Principal -->
+    <section class="offer-section">
+        <div class="container text-center">
+            <h2 class="offer-title">☕🍞🍳 OFERTA ESPECIAL ☕🍞🍳</h2>
+            <p class="offer-subtitle">Por tempo limitado!</p>
+            
+            <div class="offer-container">
+                <div class="price-section">
+                    <p class="old-price">De <span class="old-price-strike">R$ 97,00</span></p>
+                    <div class="current-price">R$ 34,99</div>
+                    <p class="price-description">Acesso imediato + Todos os bônus</p>
+                </div>
+                
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <span class="benefit-check">✓</span>
+                        <span>150 Receitas Exclusivas</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-check">✓</span>
+                        <span>Receitas em 15 minutos</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-check">✓</span>
+                        <span>Ingredientes fáceis de encontrar</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-check">✓</span>
+                        <span>Passo a passo ilustrado</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-check">✓</span>
+                        <span>Receitas testadas e aprovadas</span>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-check">✓</span>
+                        <span>Garantia de 7 dias</span>
+                    </div>
+                </div>
+
+                <button class="btn-cta pulse-animation" onclick="window.open('https://pay.cakto.com.br/8r828eh_323513', '_blank')">
+                    🛒 COMPRAR AGORA - R$ 34,99
+                </button>
+                
+                <div class="guarantee-badges">
+                    <span>🔒 Compra 100% Segura</span>
+                    <span>📱 Acesso Imediato</span>
+                    <span>✅ Garantia 7 dias</span>
+                </div>
+            </div>
+
+            <!-- Timer -->
+            <div class="timer-section">
+                <p class="timer-text">⏰ Oferta expira em:</p>
+                <div class="timer-container">
+                    <div class="timer-box">
+                        <div id="hours">23</div>
+                        <div class="timer-label">Horas</div>
+                    </div>
+                    <div class="timer-box">
+                        <div id="minutes">59</div>
+                        <div class="timer-label">Min</div>
+                    </div>
+                    <div class="timer-box">
+                        <div id="seconds">45</div>
+                        <div class="timer-label">Seg</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garantia -->
+    <section class="guarantee-section">
+        <div class="container text-center">
+            <div class="guarantee-icon">🛡️</div>
+            <h2 class="guarantee-title">Garantia Incondicional de 7 Dias</h2>
+            <p class="guarantee-text">
+                Estamos tão confiantes na qualidade das nossas receitas que oferecemos uma garantia total. 
+                Se por qualquer motivo você não ficar satisfeito, devolvemos 100% do seu dinheiro em até 7 dias.
+            </p>
+            <div class="guarantee-box">
+                <h3 class="guarantee-box-title">Risco ZERO para você!</h3>
+                <p class="guarantee-box-text">Teste todas as receitas por 7 dias. Se não gostar, é só pedir o reembolso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="final-cta-section">
+        <div class="container text-center">
+            <h2 class="section-title-white">Não perca esta oportunidade!</h2>
+            <p class="final-text">
+                Milhares de pessoas já transformaram seu café da manhã. 
+                Seja a próxima a descobrir o prazer de comer bem sem complicação!
+            </p>
+            <button class="btn-final pulse-animation" onclick="window.open('https://pay.cakto.com.br/8r828eh_323513', '_blank')">
+                QUERO TRANSFORMAR MEU CAFÉ DA MANHÃ!
+            </button>
+        </div>
+    </section>
+
     <script>
         // Timer countdown
         function updateTimer() {
